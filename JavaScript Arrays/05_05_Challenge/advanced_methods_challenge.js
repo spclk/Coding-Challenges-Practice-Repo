@@ -29,9 +29,25 @@ const movies = [
 
 //Challenge Question #1
 //Create a new array that just contains the movie titles.
+const movieTitles = movies.map((element) => {
+  return `${element.title}`;
+})
+console.log(movieTitles)
 
 //Challenge Question #2
 //Create a new array that contains only those movies that are PG-13.
+const moviesPGThirteen = movies.filter((element) => {
+  return element.rating === "PG-13";
+})
+console.log(moviesPGThirteen)
 
 //Challenge Question #3
 //Determine how many of the movies are rating R.
+const moviesR = movies.reduce((element, value) => {
+  if(value.rating === "R") {
+      element++
+  }; 
+  return element;
+  
+}, 0);
+console.log(moviesR)

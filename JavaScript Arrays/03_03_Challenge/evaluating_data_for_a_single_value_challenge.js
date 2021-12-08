@@ -8,10 +8,14 @@ console.log(includesThreeHundred)
 
 //Challenge Question #2
 //Are some of the scores under 150?
-const underOneFifty = bowlingScores.some(element => element < 150)
+const underOneFifty = bowlingScores.some((element) => {
+    return element < 150;
+})
 console.log(underOneFifty)
 
 //Challenge Question #3
 //Is every score an even number?
-const evenNumbers = bowlingScores.every(element => element % 2 === 0)
+const evenNumbers = bowlingScores.every((element) => {
+    return element % 2 === 0;
+})
 console.log(evenNumbers)

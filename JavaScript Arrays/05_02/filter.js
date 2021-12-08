@@ -8,3 +8,7 @@ const groceries = [
 
 //Filter the following array to include only those grocery items
 //that are fruits.
+const fruit = groceries.filter((element => {
+  return element.type === "fruit"
+}))
+console.log(fruit)
